@@ -25,11 +25,9 @@ describe('Pact', function() {
           withRequest: {
             method: 'GET',
             path: '/users/123',
-            headers: { Accept: 'application/json' },
           },
           willRespondWith: {
             status: 200,
-            headers: { 'Content-Type': 'application/json' },
             body: {
               name: 'Mary'
             },
@@ -39,8 +37,10 @@ describe('Pact', function() {
   )
 
   describe('GET /users/123', function() {
-    it('returns the user representation', function() {
-      assert.deepEqual(frontJS.getUser(), { name: 'Mary' });
+    it('returns the user representation', async () => {
+      let user = await frontJS.getUser();
+
+      assert.deepEqual(user, { name: 'Mary' });
     });
   });
 

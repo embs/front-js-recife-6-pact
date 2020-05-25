@@ -1,0 +1,31 @@
+{
+  "consumer": {
+    "name": "FrontJS"
+  },
+  "provider": {
+    "name": "BequeRb"
+  },
+  "interactions": [
+    {
+      "description": "a request for user 123",
+      "providerState": "User 123 does exist",
+      "request": {
+        "method": "GET",
+        "path": "/users/123"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "name": "Mary"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

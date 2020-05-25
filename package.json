@@ -1,0 +1,14 @@
+{
+  "name": "front-js-recife-6-pact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "embs",
+  "license": "MIT",
+  "dependencies": {
+    "@pact-foundation/pact": "^9.11.0"
+  }
+}

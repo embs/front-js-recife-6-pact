@@ -40,7 +40,7 @@ describe('Pact', function() {
 
   describe('GET /users/123', function() {
     it('returns the user representation', function() {
-      assert.equal(frontJS.getUser(), { name: 'Mary' });
+      assert.deepEqual(frontJS.getUser(), { name: 'Mary' });
     });
   });
 

@@ -4,7 +4,7 @@ const FrontJS = require('./../src/frontjs.js')
 const assert = require('assert');
 const path = require('path')
 
-describe('Pact', function() {
+describe('Pact', () => {
   const provider = new Pact({
     consumer: 'FrontJS',
     provider: 'BequeRb',
@@ -36,7 +36,7 @@ describe('Pact', function() {
       )
   )
 
-  describe('GET /users/123', function() {
+  describe('GET /users/123', () => {
     it('returns the user representation', async () => {
       let user = await frontJS.getUser();
 

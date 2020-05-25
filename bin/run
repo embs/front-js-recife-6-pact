@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -ev
+cd frontjs
+npm test
+cd ../bequerb
+bin/rake pact:verify

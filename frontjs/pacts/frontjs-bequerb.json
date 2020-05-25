@@ -7,8 +7,8 @@
   },
   "interactions": [
     {
-      "description": "a request for user 123",
-      "providerState": "User 123 does exist",
+      "description": "a request for user with ID 123",
+      "providerState": "Mary has the ID 123",
       "request": {
         "method": "GET",
         "path": "/users/123"

@@ -20,8 +20,8 @@ describe('Pact', function() {
       .setup()
       .then(() =>
         provider.addInteraction({
-          state: 'User 123 does exist',
-          uponReceiving: 'a request for user 123',
+          state: 'Mary has the ID 123',
+          uponReceiving: 'a request for user with ID 123',
           withRequest: {
             method: 'GET',
             path: '/users/123',

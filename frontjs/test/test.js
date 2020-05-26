@@ -1,7 +1,7 @@
 const { Pact } = require('@pact-foundation/pact')
 const FrontJS = require('./../src/frontjs.js')
 
-const assert = require('assert');
+const assert = require('assert')
 const path = require('path')
 
 describe('Pact', () => {
@@ -38,13 +38,13 @@ describe('Pact', () => {
 
   describe('GET /users/123', () => {
     it('returns the user representation', async () => {
-      let user = await frontJS.getUser();
+      let user = await frontJS.getUser()
 
-      assert.deepEqual(user, { name: 'Mary' });
-    });
-  });
+      assert.deepEqual(user, { name: 'Mary' })
+    })
+  })
 
   afterEach(() => provider.verify())
 
   after(() => provider.finalize())
-});
+})

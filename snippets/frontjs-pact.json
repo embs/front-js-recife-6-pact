@@ -1,0 +1,22 @@
+{
+  "consumer": { "name": "FrontJS" },
+  "provider": { "name": "BequeRb" },
+  "interactions": [
+    {
+      "description": "a request for user with ID 123",
+      "providerState": "Mary has the ID 123",
+      "request": {
+        "method": "GET",
+        "path": "/users/123"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "name": "Mary"
+        }
+      }
+    }
+  ]
+}

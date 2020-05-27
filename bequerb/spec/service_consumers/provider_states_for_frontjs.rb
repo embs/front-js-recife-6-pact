@@ -1,3 +1,4 @@
+# spec/service_consumers/provider_states_for_frontjs.rb
 Pact.provider_states_for 'FrontJS' do
   provider_state 'Mary has the ID 123' do
     set_up do

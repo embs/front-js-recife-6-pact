@@ -1,0 +1,15 @@
+{
+  "name": "front-js-recife-6-pact-tests101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "embs",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^7.2.0"
+  }
+}

@@ -5,7 +5,7 @@ describe 'Sign in' do
 
       post '/sign_in', params: user.credentials
 
-      expect(page).to have_content "Welcome, #{user.name}!"
+      expect(response.body).to have_content "Welcome, #{user.name}!"
     end
   end
 end

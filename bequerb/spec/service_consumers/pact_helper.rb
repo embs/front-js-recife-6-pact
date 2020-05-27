@@ -1,4 +1,4 @@
-# spec/service_consumers/pact_helper
+# spec/service_consumers/pact_helper.rb
 require 'pact/provider/rspec'
 require './spec/service_consumers/provider_states_for_frontjs.rb'
 
